@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@plugin '@tailwindcss/typography';
+
+:root {
+  --primary: rgb(139, 92, 246);
+  --primary-focus: rgb(124, 58, 237);
+  --primary-content: rgb(255, 255, 255);
+  --accent: rgb(104, 190, 141);
+  --accent-focus: rgb(76, 169, 117);
+  --accent-content: rgb(255, 255, 255);
+}
+
+@layer base {
+  body {
+    @apply bg-white text-gray-800;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  section {
+    @apply py-16 px-4 md:px-8;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-white;
+  }
+
+  .btn-accent {
+    @apply bg-accent hover:bg-accent/90 text-white;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold mb-8 text-center;
+  }
+
+  .container-custom {
+    @apply container mx-auto max-w-6xl px-4 md:px-8;
+  }
+}

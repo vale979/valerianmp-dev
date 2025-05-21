@@ -1,0 +1,42 @@
+# Environment files
+.env */
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Project management
+.projmgmt/**
+.clinerules/**
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Backend specific
+/bin/
+/pkg/
+/backend/bin/
+/backend/pkg/
+*.exe
+*.test
+*.prof
+
+# Dependency directories (root level)
+node_modules/
+
+# Build output
+/dist/
+/out/
+/backend/out/
+
+# Logs
+*.log
+logs/
+
+# Vercel
+.vercel/
