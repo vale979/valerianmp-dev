@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { footerContent } from "@/components/footer"
+import { footerContent } from "@/content/footer"
 
 export default function Footer() {
   return (
